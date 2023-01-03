@@ -1,5 +1,5 @@
 import { MockedProvider } from '@apollo/client/testing';
-import { apolloMock } from '@mocks/apollo/generateOTPKey';
+import { apolloMock } from '@mocks/apollo/apolloMock';
 import { render, waitFor, cleanup } from '@testing-library/react';
 import { useSelector } from 'react-redux';
 import { AnyAction, Dispatch, Store } from 'redux';
