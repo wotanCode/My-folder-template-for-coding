@@ -1,20 +1,47 @@
-import Enzyme, { shallow } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import { cleanup, fireEvent, render, RenderResult, screen } from '@testing-library/react';
 
-import [FTName], { [FTName]T } from './[FTName]';
+import [FTName], { [FTName]T } from '[FTName]';
 
-Enzyme.configure({ adapter: new Adapter() });
+const mockClick = jest.fn();
+
+// For skeleton test example
+jest.mock('@atoms/Skeleton', () => jest.fn(() => <div data-testid="Skeleton" />));
+
+// For components with children example.
+jest.mock('@components/AnimatedTransition', () =>
+  jest.fn(({ isOpen, children }: any) => (isOpen ? <div>{children}</div> : null))
+);
 
 describe('<[FTName] /> component', () => {
-  let wrapper: Enzyme.ShallowWrapper;
-  let props: [FTName]T;
+  let renderResult: RenderResult;
+
+  afterEach(cleanup);
+
+  const props: [FTName]T = {
+    prop1: 'prop1',
+    prop2: 'prop2',
+    prop3: mockClick,
+  };
 
   beforeEach(() => {
-    props = {};
-    wrapper = shallow(<[FTName] {...props} />);
+    renderResult = render(< [FTName] { ...props } />);
   });
 
-  it('Must render a <[FTName] /> ', () => {
-    expect(wrapper.exists()).toBeTruthy();
+  // Content tests
+  it('Must render a <[FTName] />', async () => {
+    expect(screen.getByText(/prop1/i)).toHaveTextContent('prop1');
+    expect(screen.getByText(/prop2/i)).toHaveTextContent('prop2');
+  });
+
+  /// Click tests
+  it('Click in <[FTName] />', async () => {
+    fireEvent.click(screen.getByText('prop1'));
+
+    expect(mockClick).toHaveBeenCalled();
+  });
+
+  // Skeleton Test
+  it('Must render a skeletons', async () => {
+    expect(screen.getAllByTestId('Skeleton')).toHaveLength(2);
   });
 });
