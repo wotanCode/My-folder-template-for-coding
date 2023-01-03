@@ -1,5 +1,5 @@
-## Pattern documentation
+## Templates
 
 ### React
 Template react container presentational pattern in typescript.
-Documentation: https://www.patterns.dev/posts/presentational-container-pattern/
+Pattern documentation: https://www.patterns.dev/posts/presentational-container-pattern/
