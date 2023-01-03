@@ -1,6 +1,6 @@
 import { cleanup, fireEvent, render, RenderResult, screen } from '@testing-library/react';
 
-import [FTName], { [FTName]T } from '[FTName]';
+import [FTName], { [FTName]T } from './[FTName]';
 
 const mockClick = jest.fn();
 
@@ -24,7 +24,7 @@ describe('<[FTName] /> component', () => {
   };
 
   beforeEach(() => {
-    renderResult = render(< [FTName] { ...props } />);
+    renderResult = render(<[FTName] { ...props } />);
   });
 
   // Content tests
