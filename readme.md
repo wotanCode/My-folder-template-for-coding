@@ -1,12 +1,24 @@
-## Templates
+# 📁 Templates
 
-#### Extension for vsCode
-https://marketplace.visualstudio.com/items?itemName=Huuums.vscode-fast-folder-structure
+Este repositorio contiene una recopilación de templates diseñados para agilizar la creación de estructuras iniciales de distintos tipos de proyectos. Cada template se encuentra en su propia carpeta y puede utilizarse con la extensión **Fast Folder Structure** para Visual Studio Code.
 
-- #### Template react container presentational pattern in typescript
-Pattern documentation: https://www.patterns.dev/posts/presentational-container-pattern/
+## 🚀 Instalación y Uso
 
-<hr/>
+Para utilizar estos templates en tus proyectos, sigue estos pasos:
 
-### License
-This project is licensed under the MIT License.
+1. **Instala la extensión en VS Code:**
+   - [Fast Folder Structure](https://marketplace.visualstudio.com/items?itemName=Huuums.vscode-fast-folder-structure)
+2. **Configura la extensión** de acuerdo con el template de tu preferencia.
+
+## 📂 Organización de los Templates
+
+Cada template está estructurado en su propia carpeta dentro del repositorio, permitiendo cubrir diferentes necesidades y tecnologías. Esto facilita la reutilización y adaptación a distintos tipos de proyectos o configuraciones específicas.
+
+## 📜 Licencia
+
+Este proyecto está licenciado bajo la **Licencia MIT**. Puedes utilizarlo libremente en tus propios proyectos.
+
+---
+
+Si tienes sugerencias o mejoras, ¡no dudes en contribuir! ✨
+Made with love ❤️. Casi todos los derechos reservados...
