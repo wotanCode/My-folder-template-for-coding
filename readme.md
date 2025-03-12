@@ -9,6 +9,7 @@ Para utilizar estos templates en tus proyectos, sigue estos pasos:
 1. **Instala la extensión en VS Code:**
    - [Fast Folder Structure](https://marketplace.visualstudio.com/items?itemName=Huuums.vscode-fast-folder-structure)
 2. **Configura la extensión** de acuerdo con el template de tu preferencia.
+3. **Recuerda eliminar el README** que describe cada template una vez que empieces a usarlo en tu proyecto, para mantener tu estructura limpia.
 
 ## 📂 Organización de los Templates
 
